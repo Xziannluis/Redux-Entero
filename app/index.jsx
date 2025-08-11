@@ -4,11 +4,6 @@ import { FlatList, SafeAreaView, StyleSheet, Text, useWindowDimensions, View, } 
 import { Avatar, Banner, Button, Card, Divider, TextInput, } from "react-native-paper";
 import { Provider as ReduxProvider, useDispatch, useSelector } from "react-redux";
 
-
-
-
-
-
 const todosSlice = createSlice({
   name: "todos",
   initialState: { items: [] },
@@ -48,8 +43,6 @@ const store = configureStore({
     todos: todosSlice.reducer,
   },
 });
-
-
 
 export default function App() {
   return (
@@ -185,7 +178,7 @@ export function TodosCard() {
                   <Button onPress={() => dispatch(toggleTodo(item.id))}>
                     Undo
                   </Button>
-                  <Button onPress={() => dispatch(removeTodo(item.id))} textColor="#d11">
+                  <Button onPress={() => dispatch(removeTodo(item.id))} textColor="rgba(250, 250, 250, 1)">
                     Remove
                   </Button>
                 </View>
