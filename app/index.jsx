@@ -4,7 +4,7 @@ import { FlatList, SafeAreaView, StyleSheet, Text, useWindowDimensions, View, } 
 import { Avatar, Banner, Button, Card, Divider, TextInput, } from "react-native-paper";
 import { Provider as ReduxProvider, useDispatch, useSelector } from "react-redux";
 
-// Types
+
 
 
 
